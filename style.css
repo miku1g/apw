@@ -1,0 +1,198 @@
+.sf {
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.titles {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* страница; index.html */
+
+header{
+    /* height: 70px; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    display: block
+    
+}
+
+header ol{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    padding: 24px 0px;
+    max-width: 600px;
+}
+
+header ol li{
+    list-style: none;
+    display: inline-block;
+/*    letter-spacing: 0.3px;*/
+    transition: 0.2s ease;
+}
+
+header ol li:hover {
+    list-style: none;
+    display: inline-block;
+    text-shadow: black 0 0px 5px;
+}
+
+header ol li:not(:last-child){
+    margin-right: 30px;
+} 
+
+header ol li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+main div {
+    display: flex;
+    width: max-content;
+    margin: 6% auto;
+    max-width: 800px;
+    gap: 90px;
+}
+
+main div h1 {
+    text-align: start;
+    width: 100%;
+    height: 220px;
+    max-width: 438px;
+    font-weight: 800;
+    font-size: 114px;
+    line-height: 98px;
+    /* margin-right: 6%; */
+    /* justify-self: end; */
+    user-select: none;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+
+.titleee {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(
+        217deg,
+        #bb55ff 30%,
+        #ee77ff 50%,
+        #7722aa 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 7s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+main div article {
+    display: flex;
+}
+
+main div article p {
+    width: 100%;
+    font-size: 24px;
+    text-align: end;
+    align-self: center;
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+    gap: 240px;
+}
+
+aside {
+    background: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.surv {
+    font-family: 'SF Pro Display', sans-serif;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 40px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 12px;
+    transition: 0.2s ease;
+}
+
+.surv span {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.rolep {
+    font-family: 'SF Pro Display', sans-serif;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 40px 40px;
+
+    background-color: black;
+    color: #ffffff;
+
+    border-radius: 12px;
+    transition: 0.2s ease;
+}
+
+.rolep span {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+aside:hover{
+    border-radius: 10px;
+    scale: 1.03;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+/*    filter: blur(5px);*/
+    /*box-shadow:
+      1px 1px 0px -5px rgba(0, 0, 0, 0.042),
+      3px 3px 2px -5px rgba(0, 0, 0, 0.061),
+      6px 6px 3px -5px rgba(0, 0, 0, 0.075),
+      11px 11px 6px -5px rgba(0, 0, 0, 0.089),
+      21px 21px 12px -5px rgba(0, 0, 0, 0.108),
+      52px 52px 30px -5px rgba(0, 0, 0, 0.15)
+    ;*/
+
+    background: rgba( 0, 0, 0, 0.3);
+/*    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );*/
+/*    backdrop-filter: blur( 5.5px );*/
+/*    -webkit-backdrop-filter: blur( 5.5px );*/
+        border-radius: 10px;
+/*        border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+}
